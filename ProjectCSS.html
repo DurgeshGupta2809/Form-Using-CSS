@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        margin: auto;
+        background-color: aquamarine;
+       }
+        section{
+            height: 530px;
+            width: 510px;
+            border: 50px;
+            background-color: white;
+            border-radius: 10px;  
+            box-shadow: 10px 10px 10px 3px rgb(131, 128, 128); 
+            padding: 20px;
+                 
+        
+        }
+        h1{
+            text-align: center;
+            color: darkblue;
+        
+        }
+        /* input{
+            width: 80%;
+            height:30px;
+            margin: 10px;
+  border: 1px solid rgb(172, 172, 172);
+            border-radius: 5px;
+        } */
+       
+        div{
+            text-align: center;
+        }
+        button{
+            background-color: coral;
+            border: none;
+        }
+        label{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size:small;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form>
+            <h1>REGISTRATION FORM</h1>
+            <label for="name">Enter Name</label><br>
+            <input type="text" id="name" required><br><br>
+            <label for="pass">Enter Password</label><br>
+            <input type="password" id="pass" required><br><br>
+            <label for="add">Enter Address</label><br>
+            <textarea cols="50" rows="3" id="add" required></textarea><br><br>
+            <label for="">Select Game</label><br>
+            <input type="checkbox" id="h1">
+            <label for="h1">Hockey</label><br>
+            <input type="checkbox" id="f1">
+            <label for="f1">Football</label><br>
+            <input type="checkbox" id="b1">
+            <label for="b1">Badminton</label><br>
+            <input type="checkbox" id="c1">
+            <label for="c1">Cricket</label><br>
+            <input type="checkbox" id="v1">
+            <label for="v1">Volleyball</label><br><br>
+            <label >Gender</label><br>
+            <input type="radio" id="male" name="gender">
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label><br><br>
+            <label>Select ur age</label>
+            <input type="number" min="20" max="30" required> <br><br>
+
+            <label for="file" required >Select photo</label>
+            <input type="file" id="file"><br><br>
+             <div>
+            <button>Click Me</button>
+            <button type="submit"> Submit</button>
+            <button type="reset">Reset</button>
+           </div>
+        </form>
+    </section>
+</body>
+</html>
